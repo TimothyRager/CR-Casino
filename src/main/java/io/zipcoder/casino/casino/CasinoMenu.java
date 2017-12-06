@@ -21,7 +21,7 @@ public class CasinoMenu extends Menu{
             case EXIT:
                 Casino.getInstance().exitCasino();
             case CRAPS:{
-                CrapsConsole craps = new CrapsConsole();
+                CrapsConsole craps = new CrapsConsole(Casino.getInstance().getUser());
                 craps.run();
                 break;
             }
